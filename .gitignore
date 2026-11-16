@@ -1,0 +1,33 @@
+# Downloaded data: never in git, the download script recreates it
+data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Tool caches
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Large sequencing files: GitHub refuses files over 100 MB, and a large
+# file once committed stays in the history. Keep them in data/. To commit
+# a small test file of this type anyway: git add -f <file>
+*.bam
+*.bai
+*.cram
+*.sam
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Editors and systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
